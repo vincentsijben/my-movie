@@ -21,7 +21,6 @@ body:
       label: What happened the past week?
       description: Also tell us, what did you expect to happen?
       placeholder: I've made progress exploring the sinus function to ...
-      value: ""
     validations:
       required: true
   - type: dropdown
