@@ -1,29 +1,27 @@
 name: Project documentation
 description: Keep track of your progression
-title: "[MMT3 project]: "
+title: "My MMT3 project"
 labels: ["documentation", "good first issue"]
-assignees:
-  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Nice! You've just made your first step into the world of documentation in Markdown. Let's log your progression! 
   - type: input
-    id: contact
+    id: name
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Project name
+      description: In a few words, how would you describe your final work?
+      placeholder: Interactive square pixels driven by Arduino
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
+      label: What happened the past week?
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      placeholder: I've made progress exploring the sinus function to ...
+      value: ""
     validations:
       required: true
   - type: dropdown
@@ -52,11 +50,3 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
